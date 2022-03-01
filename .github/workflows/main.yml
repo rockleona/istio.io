@@ -18,7 +18,7 @@ jobs:
       - name: Deploy gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.TOKEN_DEPLOY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: dev-rockleona
           force_orphan: true
-          publish_dir: public
+          publish_dir: ./public
