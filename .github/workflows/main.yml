@@ -1,8 +1,5 @@
 name: Github-Pages
-on:
-  push:
-    branches: 
-      - dev-rockleona
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
