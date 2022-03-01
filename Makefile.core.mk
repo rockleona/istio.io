@@ -90,7 +90,7 @@ gen: snips tidy-go format-go
 gen-check: gen check-clean-repo
 
 build: site
-	@scripts/build_site.sh ""
+	@scripts/build_site.sh "/istio.io/"
 
 build_nominify: site
 	@scripts/build_site.sh "" -no_minify
